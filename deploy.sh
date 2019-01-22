@@ -2,6 +2,7 @@ docker build -t mohit197/multi-client:latest -t mohit197/multi-client:$SHA -f ./
 docker build -t mohit197/multi-server:latest -t mohit197/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t mohit197/multi-worker:latest -t mohit197/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
+
 docker push mohit197/multi-client:latest
 docker push mohit197/multi-server:latest
 docker push mohit197/multi-worker:latest
